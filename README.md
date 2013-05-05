@@ -13,8 +13,9 @@ Typical HTTP request consists of a few steps:
 * return data to calling block
 
 They can all be combined into one abstract task, which only asks for some information that's missing.
-E.g. GET request asks only for path and call parseData when request is completed.
-Examples are included in Tests.
+E.g. GET request asks only for `path` and calls `parseData` when request is completed.
+
+Examples for GET and POST requests are included in Tests.
 
 ## How to get started
 - Download AFAbstractRESTClient
