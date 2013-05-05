@@ -24,18 +24,19 @@ Examples are included in Tests.
 - use in your own project if you like :)
 
 ##Example GET Call
-* create class that inherits from AbstractGETAPICall and override required methods
+* create class that inherits from AbstractGETAPICall and override **only required methods**:
+
 ``` objective-c
 #import "AbstractGETAPICall.h"
 
-@interface GitHubGETCall : AbstractGETAPICall
+@interface GithubGETCall : AbstractGETAPICall
 
 @end
 ```
 ``` objective-c
-#import "GitHubGETCall.h"
+#import "GithubGETCall.h"
 
-@implementation GitHubGETCall
+@implementation GithubGETCall
 
 - (NSString*) path {
     return @"https://api.github.com/repos/burczyk/AFAbstractRESTClient";
@@ -50,9 +51,10 @@ Examples are included in Tests.
 @end
 ```
 
-* use it anywhere in your code 
+* use it anywhere in your code in simple way:
+
 ``` objective-c
-GitHubGETCall *call = [[GitHubGETCall alloc] init];
+GithubGETCall *call = [[GithubGETCall alloc] init];
 [call executeAPICallWithSuccessBlock:^(id responseObject) {
 	
 } failure:^(NSError *error, id responseObject) {
