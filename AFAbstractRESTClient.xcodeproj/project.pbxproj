@@ -8,14 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		8ED30E4F17364F95005DAEBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED30E4E17364F95005DAEBD /* Foundation.framework */; };
-		8ED30E5417364F95005DAEBD /* AFAbstractRESTClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8ED30E5317364F95005DAEBD /* AFAbstractRESTClient.h */; };
-		8ED30E5617364F95005DAEBD /* AFAbstractRESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED30E5517364F95005DAEBD /* AFAbstractRESTClient.m */; };
 		8ED30E5E17364F95005DAEBD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED30E5D17364F95005DAEBD /* SenTestingKit.framework */; };
 		8ED30E6017364F95005DAEBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED30E5F17364F95005DAEBD /* UIKit.framework */; };
 		8ED30E6117364F95005DAEBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED30E4E17364F95005DAEBD /* Foundation.framework */; };
 		8ED30E6417364F95005DAEBD /* libAFAbstractRESTClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED30E4B17364F95005DAEBD /* libAFAbstractRESTClient.a */; };
 		8ED30E6A17364F95005DAEBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8ED30E6817364F95005DAEBD /* InfoPlist.strings */; };
 		8ED30E6D17364F95005DAEBD /* AFAbstractRESTClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED30E6C17364F95005DAEBD /* AFAbstractRESTClientTests.m */; };
+		8ED30E7C17364FB8005DAEBD /* AbstractGETAPICall.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED30E7717364FB8005DAEBD /* AbstractGETAPICall.m */; };
+		8ED30E7E17364FB8005DAEBD /* AbstractDELETEAPICall.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED30E7917364FB8005DAEBD /* AbstractDELETEAPICall.m */; };
+		8ED30E8017364FB8005DAEBD /* AbstractPOSTAPICall.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED30E7B17364FB8005DAEBD /* AbstractPOSTAPICall.m */; };
+		8ED30E871736518F005DAEBD /* NSDictionary+NSURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED30E841736518E005DAEBD /* NSDictionary+NSURL.m */; };
+		8ED30E891736518F005DAEBD /* NSURL+QueryParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED30E861736518E005DAEBD /* NSURL+QueryParams.m */; };
+		8ED30E8F17365742005DAEBD /* GitHubGETCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED30E8D17365742005DAEBD /* GitHubGETCall.m */; };
+		8ED30E961736613F005DAEBD /* HttpBinPOSTCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED30E951736613F005DAEBD /* HttpBinPOSTCall.m */; };
+		8ED30E9D17366749005DAEBD /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED30E9C17366749005DAEBD /* circle.png */; };
+		8FDF7A2270494495A9FEA386 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9662EAACBD42149FF08466 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +42,17 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				8ED30E5417364F95005DAEBD /* AFAbstractRESTClient.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		10F7518D8D874721975EA7E4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		3D9662EAACBD42149FF08466 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED30E4B17364F95005DAEBD /* libAFAbstractRESTClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFAbstractRESTClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED30E4E17364F95005DAEBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8ED30E5217364F95005DAEBD /* AFAbstractRESTClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFAbstractRESTClient-Prefix.pch"; sourceTree = "<group>"; };
-		8ED30E5317364F95005DAEBD /* AFAbstractRESTClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAbstractRESTClient.h; sourceTree = "<group>"; };
-		8ED30E5517364F95005DAEBD /* AFAbstractRESTClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAbstractRESTClient.m; sourceTree = "<group>"; };
 		8ED30E5C17364F95005DAEBD /* AFAbstractRESTClientTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFAbstractRESTClientTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED30E5D17364F95005DAEBD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		8ED30E5F17364F95005DAEBD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -54,6 +60,22 @@
 		8ED30E6917364F95005DAEBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8ED30E6B17364F95005DAEBD /* AFAbstractRESTClientTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAbstractRESTClientTests.h; sourceTree = "<group>"; };
 		8ED30E6C17364F95005DAEBD /* AFAbstractRESTClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAbstractRESTClientTests.m; sourceTree = "<group>"; };
+		8ED30E7617364FB8005DAEBD /* AbstractGETAPICall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractGETAPICall.h; sourceTree = "<group>"; };
+		8ED30E7717364FB8005DAEBD /* AbstractGETAPICall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AbstractGETAPICall.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		8ED30E7817364FB8005DAEBD /* AbstractDELETEAPICall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractDELETEAPICall.h; sourceTree = "<group>"; };
+		8ED30E7917364FB8005DAEBD /* AbstractDELETEAPICall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AbstractDELETEAPICall.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		8ED30E7A17364FB8005DAEBD /* AbstractPOSTAPICall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractPOSTAPICall.h; sourceTree = "<group>"; };
+		8ED30E7B17364FB8005DAEBD /* AbstractPOSTAPICall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AbstractPOSTAPICall.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		8ED30E8217364FDB005DAEBD /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8ED30E831736518E005DAEBD /* NSDictionary+NSURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NSURL.h"; sourceTree = "<group>"; };
+		8ED30E841736518E005DAEBD /* NSDictionary+NSURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NSURL.m"; sourceTree = "<group>"; };
+		8ED30E851736518E005DAEBD /* NSURL+QueryParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+QueryParams.h"; sourceTree = "<group>"; };
+		8ED30E861736518E005DAEBD /* NSURL+QueryParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+QueryParams.m"; sourceTree = "<group>"; };
+		8ED30E8C17365742005DAEBD /* GitHubGETCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitHubGETCall.h; sourceTree = "<group>"; };
+		8ED30E8D17365742005DAEBD /* GitHubGETCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitHubGETCall.m; sourceTree = "<group>"; };
+		8ED30E941736613F005DAEBD /* HttpBinPOSTCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpBinPOSTCall.h; sourceTree = "<group>"; };
+		8ED30E951736613F005DAEBD /* HttpBinPOSTCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpBinPOSTCall.m; sourceTree = "<group>"; };
+		8ED30E9C17366749005DAEBD /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ED30E4F17364F95005DAEBD /* Foundation.framework in Frameworks */,
+				8FDF7A2270494495A9FEA386 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +109,7 @@
 				8ED30E6517364F95005DAEBD /* AFAbstractRESTClientTests */,
 				8ED30E4D17364F95005DAEBD /* Frameworks */,
 				8ED30E4C17364F95005DAEBD /* Products */,
+				10F7518D8D874721975EA7E4 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +128,7 @@
 				8ED30E4E17364F95005DAEBD /* Foundation.framework */,
 				8ED30E5D17364F95005DAEBD /* SenTestingKit.framework */,
 				8ED30E5F17364F95005DAEBD /* UIKit.framework */,
+				3D9662EAACBD42149FF08466 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,8 +136,13 @@
 		8ED30E5017364F95005DAEBD /* AFAbstractRESTClient */ = {
 			isa = PBXGroup;
 			children = (
-				8ED30E5317364F95005DAEBD /* AFAbstractRESTClient.h */,
-				8ED30E5517364F95005DAEBD /* AFAbstractRESTClient.m */,
+				8ED30E8B17365196005DAEBD /* Categories */,
+				8ED30E7617364FB8005DAEBD /* AbstractGETAPICall.h */,
+				8ED30E7717364FB8005DAEBD /* AbstractGETAPICall.m */,
+				8ED30E7817364FB8005DAEBD /* AbstractDELETEAPICall.h */,
+				8ED30E7917364FB8005DAEBD /* AbstractDELETEAPICall.m */,
+				8ED30E7A17364FB8005DAEBD /* AbstractPOSTAPICall.h */,
+				8ED30E7B17364FB8005DAEBD /* AbstractPOSTAPICall.m */,
 				8ED30E5117364F95005DAEBD /* Supporting Files */,
 			);
 			path = AFAbstractRESTClient;
@@ -121,6 +151,7 @@
 		8ED30E5117364F95005DAEBD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8ED30E8217364FDB005DAEBD /* Podfile */,
 				8ED30E5217364F95005DAEBD /* AFAbstractRESTClient-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -129,8 +160,13 @@
 		8ED30E6517364F95005DAEBD /* AFAbstractRESTClientTests */ = {
 			isa = PBXGroup;
 			children = (
+				8ED30E9B17366713005DAEBD /* Resources */,
 				8ED30E6B17364F95005DAEBD /* AFAbstractRESTClientTests.h */,
 				8ED30E6C17364F95005DAEBD /* AFAbstractRESTClientTests.m */,
+				8ED30E8C17365742005DAEBD /* GitHubGETCall.h */,
+				8ED30E8D17365742005DAEBD /* GitHubGETCall.m */,
+				8ED30E941736613F005DAEBD /* HttpBinPOSTCall.h */,
+				8ED30E951736613F005DAEBD /* HttpBinPOSTCall.m */,
 				8ED30E6617364F95005DAEBD /* Supporting Files */,
 			);
 			path = AFAbstractRESTClientTests;
@@ -145,6 +181,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8ED30E8B17365196005DAEBD /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8ED30E831736518E005DAEBD /* NSDictionary+NSURL.h */,
+				8ED30E841736518E005DAEBD /* NSDictionary+NSURL.m */,
+				8ED30E851736518E005DAEBD /* NSURL+QueryParams.h */,
+				8ED30E861736518E005DAEBD /* NSURL+QueryParams.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		8ED30E9B17366713005DAEBD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8ED30E9C17366749005DAEBD /* circle.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8ED30E7017364F95005DAEBD /* Build configuration list for PBXNativeTarget "AFAbstractRESTClient" */;
 			buildPhases = (
+				1DB86C7F990B4138B2D094DB /* Check Pods Manifest.lock */,
 				8ED30E4717364F95005DAEBD /* Sources */,
 				8ED30E4817364F95005DAEBD /* Frameworks */,
 				8ED30E4917364F95005DAEBD /* CopyFiles */,
+				38A03B18253A4A519D73446B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,12 +274,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ED30E6A17364F95005DAEBD /* InfoPlist.strings in Resources */,
+				8ED30E9D17366749005DAEBD /* circle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1DB86C7F990B4138B2D094DB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
+		38A03B18253A4A519D73446B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 		8ED30E5A17364F95005DAEBD /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,7 +329,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ED30E5617364F95005DAEBD /* AFAbstractRESTClient.m in Sources */,
+				8ED30E7C17364FB8005DAEBD /* AbstractGETAPICall.m in Sources */,
+				8ED30E7E17364FB8005DAEBD /* AbstractDELETEAPICall.m in Sources */,
+				8ED30E8017364FB8005DAEBD /* AbstractPOSTAPICall.m in Sources */,
+				8ED30E871736518F005DAEBD /* NSDictionary+NSURL.m in Sources */,
+				8ED30E891736518F005DAEBD /* NSURL+QueryParams.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +342,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ED30E6D17364F95005DAEBD /* AFAbstractRESTClientTests.m in Sources */,
+				8ED30E8F17365742005DAEBD /* GitHubGETCall.m in Sources */,
+				8ED30E961736613F005DAEBD /* HttpBinPOSTCall.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +424,7 @@
 		};
 		8ED30E7117364F95005DAEBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10F7518D8D874721975EA7E4 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/AFAbstractRESTClient.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -344,6 +437,7 @@
 		};
 		8ED30E7217364F95005DAEBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10F7518D8D874721975EA7E4 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/AFAbstractRESTClient.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -356,6 +450,7 @@
 		};
 		8ED30E7417364F95005DAEBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10F7518D8D874721975EA7E4 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -363,7 +458,12 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AFAbstractRESTClient/AFAbstractRESTClient-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${PODS_HEADERS_SEARCH_PATHS}";
 				INFOPLIST_FILE = "AFAbstractRESTClientTests/AFAbstractRESTClientTests-Info.plist";
+				PODS_BUILD_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" \"${PODS_ROOT}/BuildHeaders/AFNetworking\" \"${PODS_ROOT}/BuildHeaders/CocoaLumberjack\"";
+				PODS_HEADERS_SEARCH_PATHS = "${PODS_PUBLIC_HEADERS_SEARCH_PATHS}";
+				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/AFNetworking\" \"${PODS_ROOT}/Headers/CocoaLumberjack\"";
+				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -371,6 +471,7 @@
 		};
 		8ED30E7517364F95005DAEBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10F7518D8D874721975EA7E4 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -378,7 +479,12 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AFAbstractRESTClient/AFAbstractRESTClient-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${PODS_HEADERS_SEARCH_PATHS}";
 				INFOPLIST_FILE = "AFAbstractRESTClientTests/AFAbstractRESTClientTests-Info.plist";
+				PODS_BUILD_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" \"${PODS_ROOT}/BuildHeaders/AFNetworking\" \"${PODS_ROOT}/BuildHeaders/CocoaLumberjack\"";
+				PODS_HEADERS_SEARCH_PATHS = "${PODS_PUBLIC_HEADERS_SEARCH_PATHS}";
+				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/AFNetworking\" \"${PODS_ROOT}/Headers/CocoaLumberjack\"";
+				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -403,6 +509,7 @@
 				8ED30E7217364F95005DAEBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8ED30E7317364F95005DAEBD /* Build configuration list for PBXNativeTarget "AFAbstractRESTClientTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +518,7 @@
 				8ED30E7517364F95005DAEBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -4,4 +4,15 @@
 
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
+
+#define MUST_OVERRIDE       [NSException raise:NSInternalInconsistencyException format:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)]
+#define NETWORK_ON          NSLog(@"In real application delete this entry and uncomment [UIApplication...") //[UIApplication sharedApplication].networkActivityIndicatorVisible = YES
+#define NETWORK_OFF         NSLog(@"In real application delete this entry and uncomment [UIApplication...") //[UIApplication sharedApplication].networkActivityIndicatorVisible = NO
+
+#define HTTP_METHOD_POST    @"POST"
+#define HTTP_METHOD_PUT     @"PUT"
+#define HTTP_METHOD_GET     @"GET"
+#define HTTP_METHOD_DELETE  @"DELETE"
+#define HTTP_METHOD_PATCH   @"PATCH"
+
 #endif

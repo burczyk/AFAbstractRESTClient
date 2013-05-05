@@ -10,4 +10,7 @@
 
 @interface AFAbstractRESTClientTests : SenTestCase
 
+- (void) testGET;
+- (void) testPOST;
+
 @end
