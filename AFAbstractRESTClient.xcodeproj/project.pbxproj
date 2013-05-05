@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8ED30E4F17364F95005DAEBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED30E4E17364F95005DAEBD /* Foundation.framework */; };
+		8ED30E5417364F95005DAEBD /* AFAbstractRESTClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8ED30E5317364F95005DAEBD /* AFAbstractRESTClient.h */; };
+		8ED30E5617364F95005DAEBD /* AFAbstractRESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED30E5517364F95005DAEBD /* AFAbstractRESTClient.m */; };
+		8ED30E5E17364F95005DAEBD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED30E5D17364F95005DAEBD /* SenTestingKit.framework */; };
+		8ED30E6017364F95005DAEBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED30E5F17364F95005DAEBD /* UIKit.framework */; };
+		8ED30E6117364F95005DAEBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED30E4E17364F95005DAEBD /* Foundation.framework */; };
+		8ED30E6417364F95005DAEBD /* libAFAbstractRESTClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED30E4B17364F95005DAEBD /* libAFAbstractRESTClient.a */; };
+		8ED30E6A17364F95005DAEBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8ED30E6817364F95005DAEBD /* InfoPlist.strings */; };
+		8ED30E6D17364F95005DAEBD /* AFAbstractRESTClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED30E6C17364F95005DAEBD /* AFAbstractRESTClientTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8ED30E6217364F95005DAEBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ED30E4317364F95005DAEBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ED30E4A17364F95005DAEBD;
+			remoteInfo = AFAbstractRESTClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8ED30E4917364F95005DAEBD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				8ED30E5417364F95005DAEBD /* AFAbstractRESTClient.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8ED30E4B17364F95005DAEBD /* libAFAbstractRESTClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFAbstractRESTClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED30E4E17364F95005DAEBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8ED30E5217364F95005DAEBD /* AFAbstractRESTClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFAbstractRESTClient-Prefix.pch"; sourceTree = "<group>"; };
+		8ED30E5317364F95005DAEBD /* AFAbstractRESTClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAbstractRESTClient.h; sourceTree = "<group>"; };
+		8ED30E5517364F95005DAEBD /* AFAbstractRESTClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAbstractRESTClient.m; sourceTree = "<group>"; };
+		8ED30E5C17364F95005DAEBD /* AFAbstractRESTClientTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFAbstractRESTClientTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED30E5D17364F95005DAEBD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8ED30E5F17364F95005DAEBD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8ED30E6717364F95005DAEBD /* AFAbstractRESTClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFAbstractRESTClientTests-Info.plist"; sourceTree = "<group>"; };
+		8ED30E6917364F95005DAEBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8ED30E6B17364F95005DAEBD /* AFAbstractRESTClientTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAbstractRESTClientTests.h; sourceTree = "<group>"; };
+		8ED30E6C17364F95005DAEBD /* AFAbstractRESTClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAbstractRESTClientTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8ED30E4817364F95005DAEBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED30E4F17364F95005DAEBD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ED30E5817364F95005DAEBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED30E5E17364F95005DAEBD /* SenTestingKit.framework in Frameworks */,
+				8ED30E6017364F95005DAEBD /* UIKit.framework in Frameworks */,
+				8ED30E6117364F95005DAEBD /* Foundation.framework in Frameworks */,
+				8ED30E6417364F95005DAEBD /* libAFAbstractRESTClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8ED30E4217364F95005DAEBD = {
+			isa = PBXGroup;
+			children = (
+				8ED30E5017364F95005DAEBD /* AFAbstractRESTClient */,
+				8ED30E6517364F95005DAEBD /* AFAbstractRESTClientTests */,
+				8ED30E4D17364F95005DAEBD /* Frameworks */,
+				8ED30E4C17364F95005DAEBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8ED30E4C17364F95005DAEBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ED30E4B17364F95005DAEBD /* libAFAbstractRESTClient.a */,
+				8ED30E5C17364F95005DAEBD /* AFAbstractRESTClientTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8ED30E4D17364F95005DAEBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8ED30E4E17364F95005DAEBD /* Foundation.framework */,
+				8ED30E5D17364F95005DAEBD /* SenTestingKit.framework */,
+				8ED30E5F17364F95005DAEBD /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8ED30E5017364F95005DAEBD /* AFAbstractRESTClient */ = {
+			isa = PBXGroup;
+			children = (
+				8ED30E5317364F95005DAEBD /* AFAbstractRESTClient.h */,
+				8ED30E5517364F95005DAEBD /* AFAbstractRESTClient.m */,
+				8ED30E5117364F95005DAEBD /* Supporting Files */,
+			);
+			path = AFAbstractRESTClient;
+			sourceTree = "<group>";
+		};
+		8ED30E5117364F95005DAEBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8ED30E5217364F95005DAEBD /* AFAbstractRESTClient-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8ED30E6517364F95005DAEBD /* AFAbstractRESTClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				8ED30E6B17364F95005DAEBD /* AFAbstractRESTClientTests.h */,
+				8ED30E6C17364F95005DAEBD /* AFAbstractRESTClientTests.m */,
+				8ED30E6617364F95005DAEBD /* Supporting Files */,
+			);
+			path = AFAbstractRESTClientTests;
+			sourceTree = "<group>";
+		};
+		8ED30E6617364F95005DAEBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8ED30E6717364F95005DAEBD /* AFAbstractRESTClientTests-Info.plist */,
+				8ED30E6817364F95005DAEBD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8ED30E4A17364F95005DAEBD /* AFAbstractRESTClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED30E7017364F95005DAEBD /* Build configuration list for PBXNativeTarget "AFAbstractRESTClient" */;
+			buildPhases = (
+				8ED30E4717364F95005DAEBD /* Sources */,
+				8ED30E4817364F95005DAEBD /* Frameworks */,
+				8ED30E4917364F95005DAEBD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFAbstractRESTClient;
+			productName = AFAbstractRESTClient;
+			productReference = 8ED30E4B17364F95005DAEBD /* libAFAbstractRESTClient.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8ED30E5B17364F95005DAEBD /* AFAbstractRESTClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED30E7317364F95005DAEBD /* Build configuration list for PBXNativeTarget "AFAbstractRESTClientTests" */;
+			buildPhases = (
+				8ED30E5717364F95005DAEBD /* Sources */,
+				8ED30E5817364F95005DAEBD /* Frameworks */,
+				8ED30E5917364F95005DAEBD /* Resources */,
+				8ED30E5A17364F95005DAEBD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8ED30E6317364F95005DAEBD /* PBXTargetDependency */,
+			);
+			name = AFAbstractRESTClientTests;
+			productName = AFAbstractRESTClientTests;
+			productReference = 8ED30E5C17364F95005DAEBD /* AFAbstractRESTClientTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8ED30E4317364F95005DAEBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Kamil Burczyk";
+			};
+			buildConfigurationList = 8ED30E4617364F95005DAEBD /* Build configuration list for PBXProject "AFAbstractRESTClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8ED30E4217364F95005DAEBD;
+			productRefGroup = 8ED30E4C17364F95005DAEBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8ED30E4A17364F95005DAEBD /* AFAbstractRESTClient */,
+				8ED30E5B17364F95005DAEBD /* AFAbstractRESTClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8ED30E5917364F95005DAEBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED30E6A17364F95005DAEBD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8ED30E5A17364F95005DAEBD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8ED30E4717364F95005DAEBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED30E5617364F95005DAEBD /* AFAbstractRESTClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ED30E5717364F95005DAEBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED30E6D17364F95005DAEBD /* AFAbstractRESTClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8ED30E6317364F95005DAEBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8ED30E4A17364F95005DAEBD /* AFAbstractRESTClient */;
+			targetProxy = 8ED30E6217364F95005DAEBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8ED30E6817364F95005DAEBD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ED30E6917364F95005DAEBD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8ED30E6E17364F95005DAEBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8ED30E6F17364F95005DAEBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8ED30E7117364F95005DAEBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AFAbstractRESTClient.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFAbstractRESTClient/AFAbstractRESTClient-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8ED30E7217364F95005DAEBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AFAbstractRESTClient.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFAbstractRESTClient/AFAbstractRESTClient-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8ED30E7417364F95005DAEBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFAbstractRESTClient/AFAbstractRESTClient-Prefix.pch";
+				INFOPLIST_FILE = "AFAbstractRESTClientTests/AFAbstractRESTClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8ED30E7517364F95005DAEBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFAbstractRESTClient/AFAbstractRESTClient-Prefix.pch";
+				INFOPLIST_FILE = "AFAbstractRESTClientTests/AFAbstractRESTClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8ED30E4617364F95005DAEBD /* Build configuration list for PBXProject "AFAbstractRESTClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ED30E6E17364F95005DAEBD /* Debug */,
+				8ED30E6F17364F95005DAEBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ED30E7017364F95005DAEBD /* Build configuration list for PBXNativeTarget "AFAbstractRESTClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ED30E7117364F95005DAEBD /* Debug */,
+				8ED30E7217364F95005DAEBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8ED30E7317364F95005DAEBD /* Build configuration list for PBXNativeTarget "AFAbstractRESTClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ED30E7417364F95005DAEBD /* Debug */,
+				8ED30E7517364F95005DAEBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8ED30E4317364F95005DAEBD /* Project object */;
+}
