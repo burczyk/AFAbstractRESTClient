@@ -20,7 +20,8 @@ Examples for GET and POST requests are included in Tests.
 ## How to get started
 - Download AFAbstractRESTClient
 - call `pod install` to install required AFNetworking
-- see `AFAbstractRESTClientTests.m` file with example test/usages
+- if you have never used [cocoapods](http://cocoapods.org/) remember to open `AFAbstractRESTClient.xcworkspace` rather than `AFAbstractRESTClient.xcodeproj`
+- see `AFAbstractRESTClientTests.m` file with example test/usages for GET and POST requests
 - run tests by pressing `Cmd+U`
 - use in your own project if you like :)
 
