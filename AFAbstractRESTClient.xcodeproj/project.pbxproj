@@ -21,7 +21,6 @@
 		8ED30E891736518F005DAEBD /* NSURL+QueryParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED30E861736518E005DAEBD /* NSURL+QueryParams.m */; };
 		8ED30E8F17365742005DAEBD /* GitHubGETCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED30E8D17365742005DAEBD /* GitHubGETCall.m */; };
 		8ED30E961736613F005DAEBD /* HttpBinPOSTCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED30E951736613F005DAEBD /* HttpBinPOSTCall.m */; };
-		8ED30E9D17366749005DAEBD /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED30E9C17366749005DAEBD /* circle.png */; };
 		8FDF7A2270494495A9FEA386 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9662EAACBD42149FF08466 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +74,6 @@
 		8ED30E8D17365742005DAEBD /* GitHubGETCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitHubGETCall.m; sourceTree = "<group>"; };
 		8ED30E941736613F005DAEBD /* HttpBinPOSTCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpBinPOSTCall.h; sourceTree = "<group>"; };
 		8ED30E951736613F005DAEBD /* HttpBinPOSTCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpBinPOSTCall.m; sourceTree = "<group>"; };
-		8ED30E9C17366749005DAEBD /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +158,6 @@
 		8ED30E6517364F95005DAEBD /* AFAbstractRESTClientTests */ = {
 			isa = PBXGroup;
 			children = (
-				8ED30E9B17366713005DAEBD /* Resources */,
 				8ED30E6B17364F95005DAEBD /* AFAbstractRESTClientTests.h */,
 				8ED30E6C17364F95005DAEBD /* AFAbstractRESTClientTests.m */,
 				8ED30E8C17365742005DAEBD /* GitHubGETCall.h */,
@@ -190,14 +187,6 @@
 				8ED30E861736518E005DAEBD /* NSURL+QueryParams.m */,
 			);
 			name = Categories;
-			sourceTree = "<group>";
-		};
-		8ED30E9B17366713005DAEBD /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8ED30E9C17366749005DAEBD /* circle.png */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +263,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ED30E6A17364F95005DAEBD /* InfoPlist.strings in Resources */,
-				8ED30E9D17366749005DAEBD /* circle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
