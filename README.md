@@ -1,4 +1,4 @@
-`AFAbstractRESTClient` is simple abstract solution to deal with REST webservices using AFNetworking.
+**AFAbstractRESTClient** is simple abstract solution to deal with REST webservices using AFNetworking.
 It basically adds some structure to API calls by separating each type of operation to a class.
 
 In classical approach one can use [façade pattern](http://en.wikipedia.org/wiki/Facade_pattern) to create a fat client with API methods.
