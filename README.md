@@ -63,3 +63,6 @@ GithubGETCall *call = [[GithubGETCall alloc] init];
     
 }];
 ```
+
+##License
+**AFAbstractRESTClient** is available under the MIT license. See the LICENSE file for more info.
