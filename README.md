@@ -5,25 +5,37 @@ In classical approach one can use [façade pattern](http://en.wikipedia.org/wiki
 
 This solution is based on [Template method pattern](http://en.wikipedia.org/wiki/Template_method_pattern) and allows developers to create API calls 'on-the-fly'. 
 
-Typical HTTP request consists of a few steps:
-* create request with address
-* decorate request with authentication etc.
-* add asynchronous task with request
-* parse response data or display error
-* return data to calling block
-
-They can all be combined into one abstract task, which only asks for some information that's missing.
-E.g. GET request asks only for `path` and calls `parseData` when request is completed.
+Typical HTTP request consists of a few steps combined into one operation in abstract class which calls only a few methods it needs from subclass.
+Framework `Abstract[GET|POST|DELETE]APICall` classes are responsible for:
+* turning on status bar network indicator,
+* asking subclass for `path` for given API call,
+* asking subclass for `query params` (optional),
+* configuring AFJSONRequestOperation given all parameters needed,
+* logging success data or error failure,
+* asking subclass to parse data from passed JSON object,
+* calling success or failure block accordingly to call result,
+* turning off status bar network indicator.
+ 
+In most typical situation you don't have to write this whole logic yourself. You only need to override 2 methods: `path` and `parse data` to communicate with your API.
 
 Examples for GET and POST requests are included in Tests.
 
 ## How to get started
+
+###If you use cocoapods (you should! :) )
+- add `pod 'AFAbstractRESTClient'` into your Podfile
+- run `pod install`
+- add `NSString *kServerURLString = @"http://YOUR_SERVER_ADDRESS/";` somewhere in your app. This is basic URL for your server. Each `path` method inside *Call object should return path related to this.
+- open `AFAbstractRESTClient-Prefix.pch` file and uncomment useful macros `NETWORK_ON` and `NETWORK_OFF` to show status bar network indicator
+- see `AFAbstractRESTClientTests.m` file with example test/usages for GET and POST requests
+
+###If you don't use cocoapods or just want to test the library alone
 - Download AFAbstractRESTClient
 - call `pod install` to install required AFNetworking
 - if you have never used [cocoapods](http://cocoapods.org/) remember to open `AFAbstractRESTClient.xcworkspace` rather than `AFAbstractRESTClient.xcodeproj`
 - see `AFAbstractRESTClientTests.m` file with example test/usages for GET and POST requests
 - run tests by pressing `Cmd+U`
-- use in your own project if you like :)
+- use in your own project (by dragging the project into your project in Xcode) if you like :)
 
 ##Example GET Call
 * create class that inherits from AbstractGETAPICall and override **only required methods**:
@@ -61,6 +73,54 @@ GithubGETCall *call = [[GithubGETCall alloc] init];
 	
 } failure:^(NSError *error, id responseObject) {
     
+}];
+```
+
+##Example POST Call with multipart/form-data
+* create class that inherits from AbstractPOSTAPICall and override **only required methods**:
+
+``` objective-c
+#import "AbstractPOSTAPICall.h"
+
+@interface HttpBinPOSTCall : AbstractPOSTAPICall
+
+@end
+```
+``` objective-c
+#import "HttpBinPOSTCall.h"
+
+@implementation HttpBinPOSTCall
+
+- (NSString*) path {
+    return @"post";
+}
+
+- (NSDictionary*) queryParams {
+    return @{ @"arg1" : @"value1", @"arg2" : @3.141592 };
+}
+
+- (void) constructBody:(id <AFMultipartFormData>) formData {
+    
+    // image source: http://commons.wikimedia.org/wiki/File:Mila_Kunis_2012.jpg
+    NSData *image = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Mila_Kunis_2012.jpg/128px-Mila_Kunis_2012.jpg"]];
+    
+    [formData appendPartWithFormData:[@"example data" dataUsingEncoding:NSUTF8StringEncoding] name:@"key1"];
+    [formData appendPartWithFormData:image name:@"Mila_Kunis_2012.jpg"];
+}
+
+@end
+```
+
+* use it anywhere in your code in simple way:
+
+``` objective-c
+HttpBinPOSTCall *call = [[HttpBinPOSTCall alloc] init];
+[call executeAPICallWithSuccessBlock:^(id responseObject) {
+
+} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+
+} progress:^(long long totalBytesWritten, long long totalBytesExpectedToWrite) {
+
 }];
 ```
 
