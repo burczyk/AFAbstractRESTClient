@@ -22,14 +22,14 @@ Examples for GET and POST requests are included in Tests.
 
 ## How to get started
 
-###If you use cocoapods (you should! :) )
+### If you use cocoapods (you should! :) )
 - add `pod 'AFAbstractRESTClient'` into your Podfile
 - run `pod install`
 - add `NSString *kServerURLString = @"http://YOUR_SERVER_ADDRESS/";` somewhere in your app. This is basic URL for your server. Each `path` method inside *Call object should return path related to this.
 - open `AFAbstractRESTClient-Prefix.pch` file and uncomment useful macros `NETWORK_ON` and `NETWORK_OFF` to show status bar network indicator
 - see `AFAbstractRESTClientTests.m` file with example test/usages for GET and POST requests
 
-###If you don't use cocoapods or just want to test the library alone
+### If you don't use cocoapods or just want to test the library alone
 - Download AFAbstractRESTClient
 - call `pod install` to install required AFNetworking
 - if you have never used [cocoapods](http://cocoapods.org/) remember to open `AFAbstractRESTClient.xcworkspace` rather than `AFAbstractRESTClient.xcodeproj`
@@ -37,7 +37,7 @@ Examples for GET and POST requests are included in Tests.
 - run tests by pressing `Cmd+U`
 - use in your own project (by dragging the project into your project in Xcode) if you like :)
 
-##Example GET Call
+## Example GET Call
 * create class that inherits from AbstractGETAPICall and override **only required methods**:
 
 ``` objective-c
@@ -76,7 +76,7 @@ GithubGETCall *call = [[GithubGETCall alloc] init];
 }];
 ```
 
-##Example POST Call with multipart/form-data
+## Example POST Call with multipart/form-data
 * create class that inherits from AbstractPOSTAPICall and override **only required methods**:
 
 ``` objective-c
@@ -124,5 +124,5 @@ HttpBinPOSTCall *call = [[HttpBinPOSTCall alloc] init];
 }];
 ```
 
-##License
+## License
 **AFAbstractRESTClient** is available under the MIT license. See the LICENSE file for more info.
